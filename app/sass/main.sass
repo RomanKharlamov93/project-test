@@ -1,0 +1,311 @@
+$bronze: #f1e4c9
+$brown: #b78363
+$cream: #f7c6a4
+$blue: #1b3e5e
+$begie: #f9f2ee
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Open Sans, Arial, Helvetica, sans-serif
+
+.page
+    color: #020306
+    background-color: #ffffff
+    min-width: 320px
+    overflow: hidden
+    position: relative
+    &__header
+        margin: 30px 0
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        z-index: 100
+    &__footer
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        z-index: 100
+        background: #000000
+        opacity: 0.3
+        color: #ffffff
+        padding: 50px 0
+    &__section
+        padding: 60px 0
+        &_bg-image
+            background-image: url('../img/content/layerbg1.jpg')
+            background-repeat:  no-repeat
+            object-fit: cover
+            height: auto
+            background-size: 100% 100%
+            background-position: top
+        &_bg_white
+            background: #ffffff
+        &_pad-t_150
+            padding-top: 150px
+        &_pad-b_150
+            padding-bottom: 150px
+        &_bg-grey
+            background: #f9f8f5
+        &_bg-dark
+            background: #3c3c3e
+            color: #ffffff
+        &_bg-phones
+            background-image: url('../img/content/bg2.jpg')
+            background-repeat:  no-repeat
+            object-fit: cover
+            height: auto
+            background-size: 100% 100%
+            background-position: top
+.container
+    max-width: 1170px
+    margin: 0 auto
+
+.page-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__menu
+        padding: 10px
+    &__soc
+    
+.page-nav
+    display: flex
+    justify-content: space-between
+    &__item
+        margin-right: 50px
+        list-style: none
+        &:last-child
+            margin-right: 0
+        &:hover
+            box-shadow: 1px 1px 15px 10px $cream
+            background: gold
+            border-radius: 50%
+            transition: 1s
+            .page-nav__link
+                color: black
+                background: $bronze
+                box-shadow: 1px 1px 5px 5px $bronze
+                border-radius: 30%
+                transition: .5s
+    &__link
+        padding: 10px 5px
+        color: #ffffff
+        text-decoration: none
+        font-size: 16px
+        text-transform: uppercase
+        font-weight: 700
+        
+.social
+    display: flex
+    justify-content: space-between
+    &__item
+        margin-right: 35px
+        &:last-child
+            margin-right: 0
+    &__link
+        color: #ffffff
+        font-size: 30px
+        text-decoration: none
+        font-family: Arial, Helvetica, sans-serif
+        font-weight: 1000
+        
+.preview
+    font-family: 'Open Sans'
+    display: flex
+    justify-content: space-between
+    &__descr
+        color: #ffffff
+        max-width: 55%
+        &_m-l_100
+            margin-left: 100px
+
+.preview-descr
+    &_c_000
+        color: #000000
+    &__title
+        margin: 20px 0 40px 0
+        font-size: 30px
+    &__specprice
+        margin: 20px 0 40px 0
+        font-size: 25px
+    &__price
+        color: #ffffff
+        font-size: 30px
+        &_c_000
+            color: #000000
+    &__button
+        padding: 100px 0 50px
+        text-align: center
+    &__stats
+        
+
+.preview-title
+    font-size: 48px
+    font-weight: 700
+    padding-right: 10px
+    text-transform: uppercase
+    &_c_cream
+        text-transform: none
+        color: $bronze
+
+.preview-cost
+    padding-right: 15px
+    font-weight: 700
+    &_lined
+        text-decoration: line-through
+    &_c_cream
+        color: $cream
+
+
+.btn
+    padding: 25px 100px
+    background: #ffffff
+    border-radius: 50px
+    color: black
+    font-size: 25px
+    font-weight: 700
+    cursor: pointer
+    transition: .5s
+    &_c_000
+        background: #000000
+        color: #ffffff
+        &:hover
+            background: $cream
+            color: #000000
+    &_c_fff
+        background: $cream
+        color: #000000
+        &:hover
+            background: $bronze
+            color: $blue
+    &_c_blue
+        background: #000000
+        color: #ffffff
+        &:hover
+            background: $blue
+            color: $bronze
+            
+.preview__picture
+    margin-left: 5px
+    position: relative
+
+.preview-picture
+    position: absolute
+    right: 0
+    bottom: -20%
+
+.text
+    text-align: center
+    &__title
+        font-size: 30px
+        font-weight: 700
+.title_c_000 
+    color: #000000
+    
+
+.grid
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    text-align: center
+    &__item
+        width: 25%
+        padding-top: 50px 
+    &__item-buy
+        width: 20%
+        margin: 40px 0
+    &__arrow
+        display: flex
+        text-align: center
+        align-items: center
+
+.grid-item  
+    &__icon-box
+        margin-bottom: 10px
+        text-align: center
+    &__title
+        font-weight: 700
+    &__background
+        position: relative
+    
+.icon-bg
+    position: absolute
+    left: 0
+    bottom: 0
+    max-height: 120px
+
+
+.stats
+    &__item
+        color: $cream
+        margin: 10px 0
+    &__item p
+        color: black
+    &__title
+        font-weight: 700
+    &__info
+        font-size: 16px
+
+.grid-item-buy
+    &__icon-box
+    &__descr
+        margin-top: 20px
+
+.section-button
+    padding: 25px 0
+    text-align: center
+
+.makeorder
+    &__item
+        border: 10px solid #ffffff
+        padding: 30px 60px
+        &_c_000
+            background: #000    
+            border: 10px solid #ffffff
+        &_c_brown
+            background: $brown
+            border: 10px solid #ffffff
+        &_c_blue
+            background: $blue
+            border: 10px solid #ffffff
+        &_c_cream
+            background: $cream
+            border: 10px solid #ffffff
+        &_c_begie
+            background: $begie
+            border: 10px solid #ffffff
+    &__costumer-data
+        margin: 50px 0
+    &__item-text
+        min-width: 400px
+        padding: 30px 10px 30px 10px
+        margin: 30px 0
+        display: block
+        border: none
+        border-radius: 10px
+        box-shadow: 1px 1px 40px 1px silver
+
+.blocks-holder
+    display: flex
+    justify-content: space-between
+
+.colored-block
+    margin: 15px 15px 15px 0
+    &_c_000
+        border: 1px dotted black
+    &_c_brown
+        border: 1px dotted $brown
+    &_c_blue
+        border: 1px dotted $blue
+    &_c_cream
+        border: 1px dotted $cream
+    &_c_begie
+        border: 1px dotted black
+
+.page-footer
+    display: flex
+    justify-content: space-between
